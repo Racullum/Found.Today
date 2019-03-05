@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--Plugin Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.css" />
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<title>Found.today</title>
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <header>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Me</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </header>
+    </div>
+	<div id="fullpage">
+ 
+        <div class="section">
+            <section>
+    
+                <div class="LandingPageContainer">
+                    
+                    <h1>Found.today</h1>
+                    <h3>Find your lost items faster.</h3>
+                  <a href=#HowDoesItWork-anchor class="FindOutMoreLink">Find Out How</a>
+                    
+                </div>
+         
+            </section>
+        </div>
+
+        <div class="section">
+            <section>
+                <div class="PageContainer" style="margin-left: 10vw;">
+                    <h2>How Does It Work?</h2>
+                    <p>
+                        Once you're register at Found.Today, you get a tag which you can put on all your valuable items. 
+                        If someone finds your tagged belonging, they can scan the Found.Today QR code and quickly get a message to you. 
+                        The message they send and your reply back will be handled by Found.Today without disclosing the senders or recipients email addresses.
+                    </p>
+                 
+                </div>
+                <div class="ImageContainer">
+                        <img src="img/IMG_0009.jpg" class="responsive">
+                </div>
+            </section>
+        </div>
+
+        <div class="section" >
+                <section>
+                        <div class="ImageContainer">
+                                <img src="img/IMG_0072.jpg" class="responsive">
+                        </div>
+                    <div class="PageContainer" style="margin-right: 10vw;">
+                        <h2>What Do I Need?</h2>
+                        <p>
+                                If you see a tag, scan the QR code with your smart phone and send a message. Each tag also comes with a webaddress which you can use to send a 
+                                message in case you don't have a QR reader app.
+                        </p>
+                    </div>
+                 
+                </section>
+            </div>
+
+        <div class="section" style="flex-direction: column;" >
+            
+                <div class="StepByStepContainer">
+             
+                    <h2>
+                        How To Get Started
+                    </h2>
+
+                    <div class="IconsContainer">
+                            <div class="Icon">
+                                
+                                <h3>Step 1.</h3>
+                                <img src="img/FOUND-1.jpg">
+                                <p>
+                                        Sign up at https://Found.Today to get your custom tag and print then at home if you like 
+                                </p>
+                            </div>
+                            <div class="Icon">
+                                <h3>Step 2.</h3>
+                                <img src="img/FOUND-2.jpg">
+                                <p>
+                                        Apply tags on everything that leaves home
+                                </p>
+                            </div>
+                            <div class="Icon">
+                                <h3>Step 3.</h3>
+                                <img src="img/FOUND-3.jpg">
+                                <p>
+                                        Now they can easily contact you by scanning
+                                        
+                                </p>
+                            </div>
+                        </div>
+                  
+                    </div>
+           
+        </div>
+
+
+
+    
+           <footer>
+               <div class="PageContainer">
+                <div class="content">
+                    <a href="#">Terms of Service</a>
+                    -
+                    <a href="#">Privacy Policy</a>
+                    -
+                    <a href="#">People</a>
+                    -
+                    <a href="#">Jobs</a>
+                </div>
+               </div>
+           </footer>
+        
+    </div>
+
+	<aside>
+		<h2>About section</h2>
+		<p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	</aside>
+    
+	
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: false,
+            anchors:['LandingPage', 'HowDoesItWork-anchor', 'WhatDoINeed', 'HowToGetStarted'],
+            navigation: true
+        });
+    </script>
+
+    <script>
+        function openFeature(evt, feature) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(feature).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
